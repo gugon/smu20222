@@ -82,3 +82,7 @@ em cima de UDP/TLS/RTP/SAVPF.
 </p>  
 <br>
 
+### Transporte de Mídia
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  Para o transporte de mídia é utilizado o protocolo SRTP (Secure Real-Time), este protocolo fornece confidencialidade, integridade e autenticação ao tráfego de mídia em tempo real em aplicações multimídia (áudio e vídeo), também utilizado o SRTCP (Secure Real-Time Transport Control Protocol), que é semelhante ao SRTP, porém possui dois cabeçalhos adicionais:
+ - SRTCP index que é utilizado para contar a seqüência dos pacotes
+ - Encrypt-flag (E) que indica se o corpo RTCP foi criptografado
