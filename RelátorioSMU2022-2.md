@@ -47,6 +47,31 @@ O jogador faz o registro utilizando o socket.io que gera o SID, que é um identi
 </p>  
 <br>  
 
+Nas mensagens "offer" e "answer", o formato das mensgens são definas pelos valores, junto com o json com SDP encapsulado.  
+<p align="center">
+  <img src="./imagens/offer.png"> 
+</p>  
+<br> 
+  
+<p align="center">
+  <img src="./imagens/answer.png"> 
+</p>  
+<br> 
+
+  
+Na mensagem "candidate", o formato é definido pelos seus valores, junto com Json contendo sua oferta
+  
+<p align="center">
+  <img src="./imagens/candidate.png"> 
+</p>  
+<br>   
+
+Para se formar uma transação é preciso uma sequência válida de mensagens entre duas entidades em rede, neste caso o "offer" e "answer" formam uma transação.  
+
+Diálogos são composto por uma sequência válida de transações entre duas entidades em rede, neste caso como não possui mais troca de mensagem depois da troca entre o "offer" e "answer", se considera que neste caso o diálogo e composto somente pela transação acima.
+
+
+
 ### Negociação de mídia
 &nbsp;  &nbsp;  &nbsp;  &nbsp;  O primeiro jogador assim que entra na sala, faz a captura da mídia e fica aguardando,
 assim que o segundo jogador entra na sala, faz uma lista de candidatos, em seguida faz uma oferta encapsulando o SDP completo, 
